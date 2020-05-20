@@ -1,48 +1,33 @@
 package io.servertap.api.v1.models;
 
-import com.google.gson.annotations.Expose;
-
 /**
  * An online player
  */
 public class Player {
-    @Expose
     private String uuid = null;
 
-    @Expose
     private String displayName = null;
 
-    @Expose
     private String address = null;
 
-    @Expose
     private Integer port = null;
 
-    @Expose
     private Float exhaustion = null;
 
-    @Expose
     private Float exp = null;
 
-    @Expose
     private Boolean whitelisted = null;
 
-    @Expose
     private Boolean banned = null;
 
-    @Expose
     private Boolean op = null;
 
-    @Expose
-    private Double balance =null;
-
-
+    private Double balance = null;
 
     public Player uuid(String uuid) {
         this.uuid = uuid;
         return this;
     }
-
 
 
     /**
@@ -57,8 +42,6 @@ public class Player {
     public void setBalance(Double balance) {
         this.balance = balance;
     }
-
-
 
 
     /**

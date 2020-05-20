@@ -1,23 +1,17 @@
 package io.servertap.api.v1.models;
 
-import com.google.gson.annotations.Expose;
-
 import java.util.Date;
 
 /**
  * A ban object
  */
 public class ServerBan {
-    @Expose
     private String target = null;
 
-    @Expose
     private String source = null;
-    
-    @Expose
+
     private String reason = null;
 
-    @Expose
     private Date expiration = null;
 
     public String getTarget() {

@@ -1,36 +1,25 @@
 package io.servertap.api.v1.models;
 
-import com.google.gson.annotations.Expose;
-
 /**
  * An offline player
  */
 public class OfflinePlayer {
-    @Expose
     private String uuid = null;
 
-    @Expose
     private String Name = null;
 
-    @Expose
     private Boolean whitelisted = null;
 
-    @Expose
     private Boolean banned = null;
 
-    @Expose
     private Boolean op = null;
 
-    @Expose
-    private Double balance =null;
-
-
+    private Double balance = null;
 
     public OfflinePlayer uuid(String uuid) {
         this.uuid = uuid;
         return this;
     }
-
 
 
     /**
@@ -45,8 +34,6 @@ public class OfflinePlayer {
     public void setBalance(Double balance) {
         this.balance = balance;
     }
-
-
 
 
     /**
@@ -79,7 +66,6 @@ public class OfflinePlayer {
     public void setDisplayName(String displayName) {
         this.Name = displayName;
     }
-
 
 
     public OfflinePlayer whitelisted(Boolean whitelisted) {

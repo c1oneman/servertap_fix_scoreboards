@@ -1,14 +1,10 @@
 package io.servertap.api.v1.models;
 
-import com.google.gson.annotations.Expose;
-
 import org.bukkit.OfflinePlayer;
 
 public class Whitelist {
-    @Expose
     private String uuid = null;
 
-    @Expose
     private String name = null;
 
     public Whitelist offlinePlayer(OfflinePlayer player) {

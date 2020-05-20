@@ -1,16 +1,11 @@
 package io.servertap.api.v1.models;
 
-import com.google.gson.annotations.Expose;
-
 public class ItemStack {
-    
-    @Expose
+
     private Integer count = null;
 
-    @Expose
     private Integer slot = null;
 
-    @Expose
     private String id = null;
 
     public ItemStack slot(Integer slot) {
