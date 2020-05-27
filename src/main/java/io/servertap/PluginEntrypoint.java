@@ -19,7 +19,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 import static io.javalin.apibuilder.ApiBuilder.*;
 
 
-
 public class PluginEntrypoint extends JavaPlugin {
 
     private static Economy econ = null;
