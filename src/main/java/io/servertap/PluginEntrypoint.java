@@ -97,6 +97,7 @@ public class PluginEntrypoint extends JavaPlugin {
                 // Economy routes
                 post("economy/pay", EconomyApi::playerPay);
                 post("economy/debit", EconomyApi::playerDebit);
+                get("economy", EconomyApi::getEconomyPluginInformation);
 
                 // Plugin routes
                 get("plugins", ServerApi::listPlugins);
